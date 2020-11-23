@@ -1,0 +1,15 @@
+<p>blog works!</p>
+<!-- <div class="container"> -->
+  <div class="row">
+    <div class="col-3" *ngFor="let blog of userBlogs">
+      <div class="card">
+        <img [src]="blog.image" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="text-primary">{{ blog.date | date: MM }}  {{ blog.author }} </p> 
+          <h5 class="card-title">{{ blog.title }}</h5>
+          <p class="card-text text-truncate">{{ blog.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
